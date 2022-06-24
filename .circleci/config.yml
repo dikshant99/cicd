@@ -1,4 +1,7 @@
 version: 2.1
+parameters:
+ google-project-id:
+  default: GOOGLE_PROJECT_ID
 
 orbs:
   win: circleci/windows@4.1
@@ -17,3 +20,4 @@ jobs:
             docker pull mcr.microsoft.com/windows/servercore/iis:windowsservercore-ltsc2019
             docker images
             echo $anthos_epoc_key
+            echo parameters.google-project-id
