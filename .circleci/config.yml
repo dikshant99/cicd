@@ -14,7 +14,6 @@ jobs:
           name: "Check docker"
           shell: powershell.exe
           command: |
-            docker info
-            docker images
             docker pull mcr.microsoft.com/windows/servercore/iis:windowsservercore-ltsc2019
             docker images
+            echo $anthos_epoc_key
