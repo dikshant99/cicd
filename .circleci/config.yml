@@ -10,10 +10,11 @@ jobs:
       shell: powershell.exe
     steps:
       - checkout
-      - run: systeminfo
       - run:
           name: "Check docker"
           shell: powershell.exe
           command: |
             docker info
-            docker run mcr.microsoft.com/windows/servercore/iis:windowsservercore-ltsc2019
+            docker images
+            docker pull mcr.microsoft.com/windows/servercore/iis:windowsservercore-ltsc2019
+            docker images
