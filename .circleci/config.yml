@@ -1,7 +1,8 @@
 version: 2.1
 parameters:
  google-project-id:
-  default: GOOGLE_PROJECT_ID
+  type: string
+  default: "abc"
 
 orbs:
   win: circleci/windows@4.1
