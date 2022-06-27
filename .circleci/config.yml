@@ -24,5 +24,6 @@ jobs:
             docker images
             docker tag --help
             docker push --help
+            gcloud
             echo $anthos_epoc_key
             echo "<< pipeline.parameters.google-project-id >>"
