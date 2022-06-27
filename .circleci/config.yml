@@ -22,5 +22,7 @@ jobs:
           command: |
             #docker pull mcr.microsoft.com/windows/servercore/iis:windowsservercore-ltsc2019
             docker images
+            docker tag --help
+            docker push --help
             echo $anthos_epoc_key
             echo "<< pipeline.parameters.google-project-id >>"
